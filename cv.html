@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV &amp; CV vidéo - Julien HINAULT</title>
+<meta name="description" content="CV et CV vidéo de Julien HINAULT, technicien méthodes et études en alternance chez COAERO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html#top" aria-label="Retour à l'accueil"><svg class="brand-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V9.5"/><path d="M9.75 21v-6h4.5v6"/></svg><span>Julien HINAULT</span></a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="loisirs.html">Centres d'intérêt</a></li>
+        <li><a href="cv.html" style="color:var(--ink); font-weight:600;">CV</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="navtoggle" id="navtoggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero hero-blue">
+    <div class="wrap">
+      <a class="back-link" href="index.html#top">← Retour à l'accueil</a>
+      <span class="kicker">CV &amp; CV vidéo</span>
+      <h1>Mon profil, en deux minutes ou en une page.</h1>
+      <p class="lead">Une présentation vidéo pour un aperçu rapide, et le CV complet en PDF pour tout le détail.</p>
+    </div>
+  </section>
+
+  <!-- CV VIDEO -->
+  <section class="content-section" id="video" style="border-top:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="tag">CV vidéo</p>
+        <h2>Me découvrir en vidéo</h2>
+        <p>Une courte présentation de mon parcours, de mon alternance chez COAERO et de mes projets.</p>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" poster="cv-video-poster.jpg">
+          <source src="julien-hinault-cv-video.mp4" type="video/mp4">
+          Ton navigateur ne prend pas en charge la lecture vidéo. Tu peux
+          <a href="julien-hinault-cv-video.mp4">télécharger la vidéo</a> directement.
+        </video>
+        <p class="video-caption">CV vidéo - Julien HINAULT · 2 min 48</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV PDF -->
+  <section class="content-section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="tag">CV complet</p>
+        <h2>Le CV en PDF</h2>
+        <p>Formation, expérience, compétences et logiciels maîtrisés.</p>
+      </div>
+      <div class="doc-card">
+        <div>
+          <h3>CV_HINAULT_Julien.pdf</h3>
+          <p>CV téléchargeable.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="CV_HINAULT_Julien.pdf" class="btn btn-primary">Télécharger le PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2>Envie d'aller plus loin ?</h2>
+          <p>Retrouvez mes réalisations en détail, ou contactez-moi directement.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="realisations.html" class="btn btn-primary">Voir mes réalisations</a>
+          <a href="index.html#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; width:100%;">
+    <p>© 2026 Julien HINAULT</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+<!-- Avion A330 Neo en 3D, rendu en filigrane technique dans la marge droite,
+     visible uniquement sur grand écran (voir garde-fou de largeur dans plane.js). -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="plane.js"></script>
+
+<script src="back-to-top.js"></script>
+<script src="reveal.js"></script>
+
+</body>
+</html>

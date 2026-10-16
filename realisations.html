@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations - Julien HINAULT</title>
+<meta name="description" content="Projets et réalisations de Julien HINAULT en BUT Génie Mécanique et Productique, chez COAERO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html#top" aria-label="Retour à l'accueil"><svg class="brand-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V9.5"/><path d="M9.75 21v-6h4.5v6"/></svg><span>Julien HINAULT</span></a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="realisations.html" style="color:var(--ink); font-weight:600;">Réalisations</a></li>
+        <li><a href="loisirs.html">Centres d'intérêt</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="navtoggle" id="navtoggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero hero-orange">
+    <div class="wrap">
+      <a class="back-link" href="index.html#top">← Retour à l'accueil</a>
+      <span class="kicker">Projets</span>
+      <h1>Ce que j'ai conçu, fabriqué et amélioré</h1>
+      <p class="lead">Quatre projets menés pendant ma formation et mon alternance : améliorer la fabrication de pièces d'avion, concevoir les outils et les montages qui servent à les produire, et fabriquer une pièce de A à Z.</p>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="content-section" style="border-top:none;">
+    <div class="wrap">
+      <div class="work-grid">
+        <a class="work-card" href="realisation-a330neo.html">
+          <span class="work-thumb">
+            <img src="a330neo-logo.png" alt="Logo Airbus A330neo">
+          </span>
+          <span class="work-body">
+            <span class="proj-id">PROJ · 01 - 2ᵉ année, en entreprise</span>
+            <h3>Réindustrialisation de l'A330 Neo</h3>
+            <p>Revoir la fabrication de 35 pièces d'un réacteur d'Airbus, avec 50 600 € d'outillages, pour supprimer le travail manuel le plus long.</p>
+            <span class="work-cta">Voir le détail</span>
+          </span>
+        </a>
+        <a class="work-card" href="realisation-montage-usinage.html">
+          <span class="work-thumb thumb-photo">
+            <img src="montage-usinage-thumb.jpg" alt="Montage d'usinage conçu sur Creo">
+          </span>
+          <span class="work-body">
+            <span class="proj-id">PROJ · 02 - 2ᵉ année</span>
+            <h3>Montage d'usinage pour pièce de fonderie</h3>
+            <p>Concevoir le montage qui tient une pièce métallique pendant son usinage : solide, précis, et peu coûteux.</p>
+            <span class="work-cta">Voir le détail</span>
+          </span>
+        </a>
+        <a class="work-card" href="realisation-genouillere.html">
+          <span class="work-thumb thumb-photo">
+            <img src="genouillere-thumb.jpg" alt="Genouillère mécano-soudée">
+          </span>
+          <span class="work-body">
+            <span class="proj-id">PROJ · 03 - 2ᵉ année</span>
+            <h3>Conception et fabrication d'une genouillère</h3>
+            <p>Un projet mené de la conception jusqu'à la pièce peinte : découpe, soudure, perçage et finition.</p>
+            <span class="work-cta">Voir le détail</span>
+          </span>
+        </a>
+        <a class="work-card" href="realisation-outillages-emboutissage.html">
+          <span class="work-thumb thumb-photo">
+            <img src="outillages-thumb.jpg" alt="Outillage d'emboutissage usiné">
+          </span>
+          <span class="work-body">
+            <span class="proj-id">PROJ · 04 - En entreprise</span>
+            <h3>Outillages d'emboutissage</h3>
+            <p>Concevoir les outils en acier qui donnent leur forme aux tôles, de la 3D à la pièce usinée.</p>
+            <span class="work-cta">Voir le détail</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <h2>Envie d'en savoir plus ?</h2>
+          <p>Découvrez le contexte de ces projets : ma formation, ou mon alternance chez COAERO.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="experience.html" class="btn btn-primary">Voir mon expérience</a>
+          <a href="index.html#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; width:100%;">
+    <p>© 2026 Julien HINAULT</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+<!-- Avion A330 Neo en 3D, rendu en filigrane technique dans la marge droite,
+     visible uniquement sur grand écran (voir garde-fou de largeur dans plane.js). -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="plane.js"></script>
+
+<script src="back-to-top.js"></script>
+<script src="reveal.js"></script>
+
+</body>
+</html>
