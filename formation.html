@@ -127,10 +127,15 @@
           <img src="iut-orleans-building.jpg" alt="Bâtiment de l'IUT d'Orléans">
           <p class="location-caption">IUT d'Orléans - département GMP</p>
         </div>
-        <a class="location-card map-link" href="https://www.google.com/maps/search/?api=1&query=IUT+d%27Orl%C3%A9ans%2C+rue+d%27Amboise%2C+Orl%C3%A9ans" target="_blank" rel="noopener">
-          <span class="map-visual"><svg class="map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="map-addr">Rue d'Amboise<br>45067 Orléans cedex 02</span></span>
-          <span class="location-caption">Voir sur Google Maps</span>
-        </a>
+        <div class="location-card">
+          <iframe
+            src="https://www.google.com/maps?q=IUT+d%27Orl%C3%A9ans,+rue+d%27Amboise,+Orl%C3%A9ans&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="Localisation de l'IUT d'Orléans, rue d'Amboise"></iframe>
+          <a class="location-caption map-fallback" href="https://www.google.com/maps/search/?api=1&query=IUT+d%27Orl%C3%A9ans%2C+rue+d%27Amboise%2C+Orl%C3%A9ans" target="_blank" rel="noopener">Rue d'Amboise, 45067 Orléans - ouvrir dans Google Maps</a>
+        </div>
       </div>
     </div>
   </section>

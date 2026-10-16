@@ -914,3 +914,11 @@ html{ scroll-behavior: smooth; }
 .map-addr{ font-size: 15px; line-height: 1.5; color: var(--ink); font-weight: 500; }
 .map-link .location-caption{ color: var(--accent); font-weight: 600; }
 @media (max-width: 760px){ .map-visual{ height: 220px; } }
+
+/* Lien sous la carte : secours si l'iframe Google est bloquée par l'hébergeur */
+.map-fallback{
+  display:block; text-decoration:none;
+  color: var(--accent); font-weight:600;
+  transition: background-color .15s ease;
+}
+.map-fallback:hover{ background: var(--bg-alt); }
