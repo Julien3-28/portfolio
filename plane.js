@@ -104,7 +104,7 @@
 
     var box = new THREE.Box3().setFromObject(plane);
     var size = box.getSize(new THREE.Vector3());
-    var boundingSpan = Math.max(size.x, size.y) * 1.9; // safety margin
+    var boundingSpan = Math.max(size.x, size.y) * 1.25; // marge réduite = avion plus grand
 
     function fitCamera() {
       var w = gutterWidth();

@@ -22,7 +22,7 @@
         <li><a href="realisations.html">Réalisations</a></li>
         <li><a href="loisirs.html">Centres d'intérêt</a></li>
         <li><a href="cv.html">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="navtoggle" id="navtoggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -51,11 +51,11 @@
         </div>
 
         <h1>Je veux devenir ingénieur aéronautique.</h1>
-        <p class="lead">De 2024 à 2027, j'ai préparé un BUT Génie Mécanique et Productique à l'IUT d'Orléans, en alternance chez <strong>COAERO</strong>, une entreprise qui fabrique des pièces en tôle pour l'aéronautique. Mon métier, technicien méthodes, consiste à répondre à une question : comment fabriquer cette pièce ? J'ai défini les étapes de fabrication et conçu les outillages, ces montages sur mesure qui permettent de mettre les pièces en forme et de vérifier qu'elles sont conformes.</p>
+        <p class="lead">Passionné par les avions et l'espace depuis l'enfance, j'ai su que je voulais travailler dans ce milieu après avoir assisté à un meeting aérien. Voir ces machines passer au-dessus de ma tête a transformé une curiosité d'enfant en projet : comprendre comment elles sont faites, et un jour participer à les construire.</p>
+        <p class="lead">La mécanique est venue naturellement. J'aime comprendre comment les choses fonctionnent, et surtout comment on les fabrique réellement : ce qui sépare un plan d'une pièce qui sort d'atelier. C'est ce que je fais aujourd'hui en méthodes chez COAERO, et c'est précisément ce que je veux approfondir en devenant ingénieur aéronautique.</p>
         <div class="cta-row">
           <a href="realisations.html" class="btn btn-primary">Voir mes réalisations</a>
-          <a href="#contact" class="btn btn-ghost">Me contacter</a>
-          <a href="cv.html#video" class="btn btn-ghost btn-video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>Me découvrir en vidéo</a>
+          <a href="contact.html" class="btn btn-ghost">Me contacter</a>
         </div>
       </div>
       <div class="rig" aria-hidden="true">
@@ -67,22 +67,21 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
+  <!-- CV VIDEO -->
+  <section id="video" class="section-alt">
     <div class="wrap">
-      <div class="contact-card">
-        <div>
-          <h2>Me contacter</h2>
-        </div>
-        <div class="contact-actions">
-          <a href="mailto:julienhinault3@orange.fr" class="btn btn-primary">julienhinault3@orange.fr</a>
-          <a href="tel:+33647055745" class="btn btn-ghost">06 47 05 57 45</a>
-          <a href="https://www.linkedin.com/in/julien-hinault-317837350" class="btn btn-ghost">LinkedIn</a>
-          <figure class="qr-block">
-            <img src="qr-linkedin.png" alt="QR code vers le profil LinkedIn de Julien Hinault">
-            <figcaption>Mon LinkedIn</figcaption>
-          </figure>
-        </div>
+      <div class="section-head">
+        <p class="tag">CV vidéo</p>
+        <h2>Me découvrir en deux minutes</h2>
+        <p>Une présentation de mon parcours, de mon alternance chez COAERO et de mes projets.</p>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" poster="cv-video-poster.jpg">
+          <source src="julien-hinault-cv-video.mp4" type="video/mp4">
+          Ton navigateur ne prend pas en charge la lecture vidéo. Tu peux
+          <a href="julien-hinault-cv-video.mp4">télécharger la vidéo</a> directement.
+        </video>
+        <p class="video-caption">CV vidéo - Julien HINAULT · 2 min 48</p>
       </div>
     </div>
   </section>
@@ -114,7 +113,6 @@
 <script src="plane.js"></script>
 
 <script src="back-to-top.js"></script>
-<script src="reveal.js"></script>
 
 </body>
 </html>

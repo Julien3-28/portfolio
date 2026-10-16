@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Julien HINAULT</title>
+<meta name="description" content="Contacter Julien Hinault : courriel, téléphone et profil LinkedIn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html#top" aria-label="Retour à l'accueil"><svg class="brand-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V9.5"/><path d="M9.75 21v-6h4.5v6"/></svg><span>Julien HINAULT</span></a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="loisirs.html">Centres d'intérêt</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html" style="color:var(--ink); font-weight:600;">Contact</a></li>
+      </ul>
+      <button class="navtoggle" id="navtoggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero hero-dark">
+    <div class="wrap">
+      <a class="back-link" href="index.html#top">← Retour à l'accueil</a>
+      <span class="kicker">Contact</span>
+      <h1>Me contacter</h1>
+      <p class="lead">À la recherche d'une alternance en école d'ingénieur aéronautique pour la rentrée 2027, partout en France.</p>
+    </div>
+  </section>
+
+  <!-- COORDONNEES -->
+  <section class="content-section" style="border-top:none;">
+    <div class="wrap">
+      <div class="detail-split">
+        <div>
+          <p class="tag">Mes coordonnées</p>
+          <h2>Écrivez-moi</h2>
+          <p>Que ce soit pour une proposition d'alternance, une question sur l'un de mes projets ou simplement pour échanger sur la mécanique et l'aéronautique, je réponds à tous les messages.</p>
+          <div class="contact-actions" style="margin-top:30px;">
+            <a href="mailto:julienhinault3@orange.fr" class="btn btn-primary">julienhinault3@orange.fr</a>
+            <a href="tel:+33647055745" class="btn btn-ghost">06 47 05 57 45</a>
+            <a href="https://www.linkedin.com/in/julien-hinault-317837350" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <figure class="detail-figure figure-side qr-side">
+          <img src="qr-linkedin.png" alt="QR code vers le profil LinkedIn de Julien Hinault">
+          <figcaption>Scannez pour ouvrir mon profil LinkedIn</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="content-section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="tag">Mes documents</p>
+        <h2>CV et présentation vidéo</h2>
+        <p>Mon CV au format PDF et ma présentation vidéo sont réunis sur une page dédiée.</p>
+      </div>
+      <a href="cv.html" class="btn btn-primary">Voir mon CV</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; width:100%;">
+    <p>© 2026 Julien HINAULT</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+<!-- Avion A330 Neo en 3D, rendu en filigrane technique dans la marge droite,
+     visible uniquement sur grand écran (voir garde-fou de largeur dans plane.js). -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="plane.js"></script>
+
+<script src="back-to-top.js"></script>
+
+</body>
+</html>

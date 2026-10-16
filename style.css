@@ -803,16 +803,6 @@ h2{ font-size: clamp(27px, 3.1vw, 36px); }
 .page-hero.hero-green::after { background:#5DAF7A; }
 .page-hero.hero-blue::after  { background:#0071E3; }
 
-/* ---- Apparition au défilement ---- */
-.reveal{ opacity:0; transform: translateY(24px); }
-.reveal.in{
-  opacity:1; transform:none;
-  transition: opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1);
-}
-@media (prefers-reduced-motion: reduce){
-  .reveal, .reveal.in{ opacity:1; transform:none; transition:none; }
-}
-
 /* ---- Survol : léger soulèvement, comme les cartes Apple ---- */
 .work-card, .info-card, .teaser-card, .tool-card{
   transition: transform .25s cubic-bezier(.22,.61,.36,1), box-shadow .25s ease, border-color .15s ease;
@@ -922,3 +912,7 @@ html{ scroll-behavior: smooth; }
   transition: background-color .15s ease;
 }
 .map-fallback:hover{ background: var(--bg-alt); }
+
+/* QR en colonne latérale sur la page Contact */
+.qr-side{ background:#fff; }
+.qr-side img{ padding: 34px; max-width: 320px; margin: 0 auto; }
